@@ -1,11 +1,17 @@
-var express = require ('express');
+var express=require ("express");
+
 var app=express();
 
-app.get('/',(req,res)=>{
-    res.send("hello home page")
+app.get("/",(req,res)=>{
+	res.send("in home page")
 })
-app.get('/about',(req,res)=>{
-    res.send("hello home about page")
+
+app.get("/about",(req,res)=>{
+	res.send("in about")
 })
-app.listen(3001);
-console.log("server at 3001");
+
+app.listen(4000);
+
+
+
+
